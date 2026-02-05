@@ -12,10 +12,10 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  inline-size: 1200px;
-  block-size: 100%;
   margin: auto;
   background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
 }
 
 h1,
@@ -39,10 +39,10 @@ ol {
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
 }
@@ -64,9 +64,9 @@ ol {
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
-  align-items: end; 
-  gap: 29px; 
-  width: 1140px; 
+  align-items: end;
+  gap: 29px;
+  width: 1140px;
 }
 
 /* ===== СЕКЦИЯ РЕЗУЛЬТАТОВ (ВИДЕО И ФОРМА) ===== */
@@ -102,10 +102,10 @@ ol {
 }
 
 .search-form__fieldset {
-  border: none;
   display: flex;
   flex-direction: column;
   gap: 5px;
+  border: none;
 }
 
 /* Поле "Город" */
@@ -114,35 +114,35 @@ ol {
 }
 
 .search-form__fieldset-title {
+  margin-bottom: 4px;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
-  margin-bottom: 4px;
 }
 
 .search-form__label {
   display: flex;
   align-items: center;
+  gap: 5px;
   width: fit-content;
   cursor: pointer;
-  gap: 5px;
 }
 
 .search-form__textfield {
   width: 225px;
   height: 27px;
-  background-color: transparent;
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
+  padding: 0 2px;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
-  padding: 0 2px;
+  background-color: transparent;
   appearance: none;
 }
 
@@ -171,12 +171,12 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
+  position: relative;
   display: inline-block;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
   padding: 1px;
-  position: relative;
 }
 
 .search-form__pseudo-checkbox::after {
@@ -184,8 +184,8 @@ ol {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: #fff;
   opacity: 0;
+  background-color: #fff;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
@@ -206,23 +206,23 @@ ol {
 
 /* Кнопка "Найти" */
 .button {
-  background-color: transparent;
   border: 1px solid #fff;
+  padding: 0;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
   text-align: center;
+  background-color: transparent;
   cursor: pointer;
-  padding: 0;
   appearance: none;
 }
 
 .search-form__submit-button {
+  align-self: flex-end;
   width: 194px;
   height: 34px;
-  align-self: flex-end;
 }
 
 .button:hover {
@@ -239,29 +239,29 @@ ol {
 
 .button:focus-visible {
   outline: 1px solid #fff;
-  outline-offset: 1px; 
+  outline-offset: 1px;
 }
 
 /* ===== СЕКЦИЯ ДЕТАЛЕЙ (КАРТОЧКИ) ===== */
 .content__details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
   width: 100%;
   max-width: 399px;
   height: 100%;
   max-height: 534px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 26px;
 }
 
 .title {
+  padding: 0 2px;
   color: #fff;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
-  padding: 0 2px;
 }
 
 .content__accent {
@@ -269,13 +269,13 @@ ol {
 }
 
 .content__list-container {
-  display: grid; 
+  position: relative;
+  display: grid;
+  gap: 30px;
   width: 100%;
   height: 298px;
-  overflow: auto;
-  position: relative;
-  gap: 30px;
   padding: 0 2px;
+  overflow: auto;
 }
 
 .content__list {
@@ -306,32 +306,32 @@ ol {
 }
 
 .content__video-card-description-container {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   gap: 4px;
-  max-width: 191px; 
+  max-width: 191px;
   padding: 2px 0 0 0px;
 }
 
 .content__video-card-title {
+  overflow: hidden;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .content__video-card-description {
+  display: -webkit-box;
+  overflow: hidden;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
-  overflow: hidden;
-  display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
