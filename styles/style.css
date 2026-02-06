@@ -74,7 +74,7 @@ ol {
   display: flex;
   flex-direction: column;
   width: 711px;
-  height: 456px;
+  padding-top: 78px;
 }
 
 /* Контейнер видео */
@@ -98,7 +98,6 @@ ol {
   justify-content: space-between;
   align-items: flex-start;
   width: 711px;
-  height: 54px;
 }
 
 .search-form__fieldset {
@@ -137,7 +136,7 @@ ol {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   padding: 0 2px;
-  color: #fff;
+  color: inherit;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -162,7 +161,7 @@ ol {
 /* Поле "Время суток" */
 .search-form__fieldset:nth-of-type(2) {
   width: 212px;
-  height: 49px;
+  padding-bottom: 3px;
 }
 
 .search-form__checkbox-list {
@@ -206,6 +205,7 @@ ol {
 
 /* Кнопка "Найти" */
 .button {
+  height: 34px;
   border: 1px solid #fff;
   padding: 0;
   color: #fff;
@@ -222,7 +222,6 @@ ol {
 .search-form__submit-button {
   align-self: flex-end;
   width: 194px;
-  height: 34px;
 }
 
 .button:hover {
@@ -250,8 +249,6 @@ ol {
   gap: 26px;
   width: 100%;
   max-width: 399px;
-  height: 100%;
-  max-height: 534px;
 }
 
 .title {
@@ -302,7 +299,6 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  height: 103px;
 }
 
 .content__video-card-description-container {
@@ -366,7 +362,6 @@ ol {
 /* Кнопка "Показать еще" */
 .more-button {
   width: 100%;
-  height: 34px;
   margin: 2px 0;
 }
 
